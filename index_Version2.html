@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Luban Fragrance — Handcrafted Scents</title>
+  <meta name="description" content="Luban Fragrance — handcrafted boutique perfumes. Contact us to order: lubanfragrance@gmail.com" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1 class="brand">Luban Fragrance</h1>
+      <nav class="nav">
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h2>Boutique, Handcrafted Fragrances</h2>
+        <p>Small-batch perfumes made with care. Message or email us to order — we deliver.</p>
+        <a class="cta" href="#products">See Products</a>
+      </div>
+    </section>
+
+    <section id="products" class="wrap products">
+      <h3>Featured</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="images/perfume1.jpg" alt="Rose Velvet perfume bottle">
+          <h4>Rose Velvet</h4>
+          <p>Soft rose with warm amber — 50ml. ₦3,000</p>
+          <a class="btn" href="mailto:lubanfragrance@gmail.com?subject=Order%20-%20Rose%20Velvet">Order via Email</a>
+        </article>
+
+        <article class="card">
+          <img src="images/perfume2.jpg" alt="Citrus Breeze perfume bottle">
+          <h4>Citrus Breeze</h4>
+          <p>Fresh citrus and jasmine — 50ml. ₦2,500</p>
+          <a class="btn" href="mailto:lubanfragrance@gmail.com?subject=Order%20-%20Citrus%20Breeze">Order via Email</a>
+        </article>
+
+        <article class="card">
+          <img src="images/perfume3.jpg" alt="Midnight Oud perfume bottle">
+          <h4>Midnight Oud</h4>
+          <p>Deep oud and sandalwood — 50ml. ₦4,000</p>
+          <a class="btn" href="mailto:lubanfragrance@gmail.com?subject=Order%20-%20Midnight%20Oud">Order via Email</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="wrap about">
+      <h3>About Luban Fragrance</h3>
+      <p>We craft small-batch perfumes using quality ingredients. Each bottle is tested and packaged with care. Follow our Facebook page for new drops and offers.</p>
+      <p><a href="https://www.facebook.com/profile.php?id=61586484638332" target="_blank" rel="noopener">Luban Fragrance on Facebook</a></p>
+    </section>
+
+    <section id="contact" class="wrap contact">
+      <h3>Contact / Order</h3>
+
+      <p>Email: <a href="mailto:lubanfragrance@gmail.com">lubanfragrance@gmail.com</a></p>
+      <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61586484638332" target="_blank" rel="noopener">Our Facebook page</a></p>
+
+      <h4>Quick order form</h4>
+      <!-- Replace the form action with your Formspree endpoint (free) if you sign up.
+           Sign up at https://formspree.io and replace the action URL below. -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label>
+          Your name
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          Email or phone
+          <input type="text" name="contact" required />
+        </label>
+
+        <label>
+          Message (product, qty, delivery address)
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+
+        <button type="submit" class="btn">Send Order</button>
+      </form>
+
+      <p class="note">Or send an email to <a href="mailto:lubanfragrance@gmail.com">lubanfragrance@gmail.com</a> with the product name and delivery details.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Luban Fragrance — Made with care</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

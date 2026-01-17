@@ -1,0 +1,33 @@
+:root{
+  --accent:#8b5e83;
+  --bg:#fffaf9;
+  --text:#222;
+  --muted:#666;
+  --radius:10px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*{box-sizing:border-box}
+body{margin:0;color:var(--text);background:var(--bg);line-height:1.5}
+.wrap{max-width:960px;margin:0 auto;padding:1rem}
+.site-header{background:#fff;box-shadow:0 1px 0 rgba(0,0,0,.06)}
+.brand{margin:0;padding:.75rem 0;font-size:1.25rem;color:var(--accent)}
+.nav{float:right}
+.nav a{margin-left:1rem;color:var(--muted);text-decoration:none}
+.hero{padding:2.5rem 0;text-align:center}
+.hero h2{margin:.5rem 0;font-size:1.6rem;color:var(--accent)}
+.cta{display:inline-block;margin-top:1rem;background:var(--accent);color:#fff;padding:.6rem 1rem;border-radius:8px;text-decoration:none}
+.products{padding:1rem 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{background:#fff;padding:.75rem;border-radius:var(--radius);box-shadow:0 4px 14px rgba(0,0,0,.06);text-align:center}
+.card img{width:100%;height:170px;object-fit:cover;border-radius:6px}
+.card h4{margin:.6rem 0}
+.btn{display:inline-block;margin-top:.6rem;background:var(--accent);color:#fff;padding:.5rem .7rem;border-radius:8px;text-decoration:none}
+.about{padding:1rem 0}
+.contact form{display:grid;gap:.6rem;max-width:560px}
+.contact input,.contact textarea{width:100%;padding:.6rem;border-radius:8px;border:1px solid #e6e6e6}
+.note{color:var(--muted);font-size:.95rem}
+.site-footer{padding:1rem 0;text-align:center;color:var(--muted);font-size:.9rem}
+@media (max-width:600px){
+  .nav{float:none;text-align:right;margin-top:0}
+  .wrap{padding:.75rem}
+}
